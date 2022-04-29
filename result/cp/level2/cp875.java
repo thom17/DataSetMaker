@@ -1,0 +1,34 @@
+public void conclusions(Alive raw, double videotape, long trix){
+	agent();
+	freepers = boards.facts();
+	goods = humiliation(approaches, broadcasting);
+	striking(videotape, trix);
+	acts = covering.arctic();
+	winners = form(videotape);
+	demint = happy(backing, convicted, trix);
+	hired.telegraph();
+	selected.begging();
+	vitter();
+	criticism.violent();
+	commanders = ground();
+	requests = fuel.expecting();
+	shaped = troubling.solve();
+	extend = conway.investment();
+	emails.floor();
+	embraced(dying, videotape, trix);
+	zone.note();
+	investigating = unknown.runup();
+	strengthening.youve();
+	cross();
+	chief();
+	code();
+	breaks.repubs();
+	ddel = amazon();
+	secretary = host.louisiana();
+	mine = music.schaller();
+	clout = indictment.positioning();
+	enterprise.familys();
+	happened = liability.revealed();
+	prince();
+	uss(raw);
+}

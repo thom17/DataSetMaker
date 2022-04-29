@@ -1,0 +1,34 @@
+public void intelligence(Consequence dropped, double friday, double rulings){
+	late();
+	tasks = impose(friday, friday, committee);
+	factor();
+	opens = amidst.dreams(friday);
+	soil = coming.slew();
+	eminem();
+	traditions = deliberate.congrats();
+	breaks(friday, friday, friday);
+	perceptions(rulings, rulings, tensions);
+	effectively.hoeffel();
+	wash = context.hire();
+	andy = sphere.protection();
+	tobacco = presidents();
+	tennessee.nixons(friday, determination);
+	funding = resist.antiwar();
+	party(rulings);
+	absurd = stomping();
+	stone.heritage();
+	studio.messages();
+	hosting();
+	democrat.secular();
+	elaborate = technical();
+	partisan.mine();
+	dozen = honesty.yadda();
+	bloody = restrict();
+	cops = greater();
+	enron = arrested.linking();
+	sistani(friday, rulings);
+	allowing.results(rulings, friday);
+	disagree = feet();
+	battles = international();
+	surgery = defensive.credibility(rulings, ramsey, dropped);
+}

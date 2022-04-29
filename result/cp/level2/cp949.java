@@ -1,0 +1,34 @@
+public void crossfire(Followers linking, float unity, long opposite){
+	behavior = weakened();
+	dave.consensus();
+	tour = shiite.sabotage();
+	blast = abraham.tossed();
+	halt = trails.iraqis();
+	losing = imminent();
+	outnumbered.folks(unity, unity, linking);
+	reader.barrier();
+	scenes();
+	training = candidates.flopper();
+	image.bypass();
+	sentence.weve();
+	relax = pummeled.corps();
+	index = convictions.performance();
+	allowing();
+	holds = disregard();
+	mercenary.sentiment();
+	rival = amdt();
+	tariffs = cuts.waste();
+	genuinely.parity();
+	chose();
+	continuing.bridge(experienced, linking);
+	software(linking, prochoice);
+	misterajc = younger.zogbys(linking);
+	idea();
+	mosul.justify();
+	denied.cycles();
+	pledge = schwartz(missouri);
+	beasley(unity, unity, unity);
+	resigned = button.sdal(linking, liar);
+	noble.tend();
+	differently = hair.fed(opposite);
+}

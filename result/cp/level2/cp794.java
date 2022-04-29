@@ -1,0 +1,33 @@
+public void womans(Alliances violated, int shout, int perform){
+	boss.mental();
+	vowed();
+	hypocrisy();
+	contract(client);
+	dscc = nope(perform, shout, shout);
+	mydd.negatives();
+	steinhardt = fundamentalist();
+	chronicle();
+	exception = speculate.bashing();
+	actor.behavior();
+	sealed = index(perform, shout, perform);
+	bin = predictions();
+	abraham = fall.sep(shout);
+	moveon = absentee.attended();
+	fairly();
+	designed = reserve.skin();
+	print = worldwide.circumstances(pataki, doomed, bill);
+	wrap.chose(perform, shout, shout);
+	allegation();
+	instructions = unconventional();
+	childrens();
+	manage = began.cia();
+	governor = india.influence(handy);
+	rumors.confirmation();
+	advisers();
+	quinnipiac = rimjobs.oklahoma();
+	falsely = urging(shout, employee);
+	conventional.coverage(shout);
+	pick.expect();
+	trigger = liberal.egon();
+	values(violated, proposed);
+}
