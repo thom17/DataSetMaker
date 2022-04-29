@@ -5,6 +5,8 @@ import java.util.Random;
 public class Var {
 
     public boolean used;
+    public boolean isClass = false;
+
     public String typeName;
     public String name;
 
@@ -21,5 +23,6 @@ public class Var {
         char []arr = typeName.toCharArray();
         arr[0] = Character.toUpperCase(arr[0]);
         typeName = new String(arr);
+        isClass = true;
     }
 }

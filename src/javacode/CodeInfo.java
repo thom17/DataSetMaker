@@ -24,14 +24,14 @@ public class CodeInfo {
 
     ArrayList<String> memberList = new ArrayList<String>();
     String []nameCandidateList;
-    String []typeList;
+    String []typeList = NameList.javaDataTypeList;
 
     public String makeBlock(int level) {
         boolean allUse = false;
         StringBuilder sb = new StringBuilder("{\n");
+        ArrayList<String> lines = new ArrayList<String>();
         while ( !allUse) {
-
-            sb.append("\t").append(makeExp()).append(";\n");
+            lines.add(makeExp());
 
             //전부 사용 했는지 체크하여 allUse값 설정
             for (Var var : parameterList)
@@ -42,9 +42,68 @@ public class CodeInfo {
                     break;
                 }
         }
+
+        if ( 2 < level) {
+            String tab = "\t";
+            int pos = 0;
+            int []sep = addIfStmt(lines, controlVar);
+            for(int i=0; i < lines.size(); i++) {
+                if (pos == 3 || sep[pos] == i) {
+                    tab = "\t";
+                    sb.append(tab+lines.get(i)+"\n");
+                    if(pos < 3) {
+                        tab ="\t\t";
+                        pos++;
+                    }
+                } else {
+                    sb.append(tab+lines.get(i)+";\n");
+                }
+
+
+            }
+        } else {
+            String tab = "\t";
+            for (int i=0; i < lines.size(); i++) {
+                    sb.append(tab+lines.get(i)+";\n");
+                }
+        }
         sb.append("}");
         return sb.toString();
     }
+    private int[] addIfStmt(ArrayList<String> lines, Var condVar) {
+
+        if (5 < lines.size()) {
+            int []sep = new int[3];
+            do {
+                sep[0] = rand.nextInt(lines.size());
+                sep[1] = rand.nextInt(lines.size()-sep[0]) + sep[0];
+                sep[2] = rand.nextInt(lines.size()-sep[1]) + sep[1];
+            } while (sep[0] == sep[1] || sep[1] == sep[2]);
+
+            if( condVar.typeName.equals("boolean") && 4 < rand.nextInt(12) ) {
+                String cond = "if ( " +condVar.name+" ) {";
+                lines.add(sep[0], cond);
+            } else {
+                String cond = "if ( "+ nameCandidateList[rand.nextInt(nameCandidateList.length)]+"("+condVar.name+")) {";
+                lines.add(sep[0], cond);
+            }
+
+            lines.add(++sep[1] , "} else {");
+            lines.add(++sep[2]+1, "}");
+            return sep;
+        }else {
+            String cond = "if ( "+ nameCandidateList[rand.nextInt(nameCandidateList.length)]+"("+condVar.name+")) {";
+            lines.add(0, cond);
+            lines.add(2, "}");
+            int []sep = new int[3];
+            sep[0] = 0;
+            sep[1] = 2;
+            sep[2] = 99999999;
+            return sep;
+        }
+
+    }
+
 
     private String makeExp() {
         StringBuilder sb = new StringBuilder(randAssign());
@@ -153,6 +212,7 @@ public class CodeInfo {
         parameterDataVar = new Var[dataSize];
         for (int i = 0; i < dataSize; i++) {
             Var var = new Var(NameList.javaDataTypeList, nameCandidateList);
+            var.isClass = false;
             if ( isIn(parameterList, var.name) ) {
                 i--;
             } else {
@@ -179,6 +239,15 @@ public class CodeInfo {
     }
 
     private void addControlVar() {
+        Var var = null;
+        if ( 40 < rand.nextInt(101)) {
+            var = new Var(typeList, nameCandidateList);
+        } else {
+            var = new Var(nameCandidateList, nameCandidateList);
+            var.upperTypeFirst();
+        }
+        parameterList.add(var);
+        controlVar = var;
     }
 
     private void addCommonVar() {
